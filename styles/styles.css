@@ -40,6 +40,7 @@ nav ul li a {
     text-decoration: none;
     color: inherit;
     font-size: 20px;
+    text-transform: uppercase;
 }
 
 section#home {
@@ -51,7 +52,7 @@ section#home {
     color: white;
     background-image: url("../images/home.png");
     background-size: cover;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 2em;
 }
 
@@ -75,15 +76,16 @@ section#cars {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 350px);
+    grid-gap: 1.5em;
 }
 
 .card {
-    width: 30vw;
-    padding: 10px 5px 10px 5px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 5px 2px #E8E8E8FF;
+    box-shadow: 0 0 5px 1px #E8E8E8FF;
     border-radius: 20px;
 }
 
@@ -102,30 +104,48 @@ section#cars {
     display: grid;
     grid-gap: 1em;
     grid-template-areas: "r b"
-                         "p p"
-                         "pr pr";
+                         "p pr";
 }
 
-.card-specs .range {
+.range {
     grid-area: r;
 }
 
-.card-specs .battery {
+.battery {
     grid-area: b;
 }
 
-.card-specs .power {
+.power {
     grid-area: p;
 }
 
-.card-specs .price {
+.price {
     grid-area: pr;
+}
+
+.spec-name {
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+.learn-more {
+    width: 90%;
+    text-decoration: none;
+    padding: 10px 5px 10px 5px;
+    margin: 5px;
+    color: white;
+    background-color: coral;
+    border-radius: 10px;
     text-align: center;
+}
+
+.gray-text {
+    color: gray;
 }
 
 footer {
     position: static;
-    align-self: flex-end;
     width: 100%;
     text-align: center;
 }
