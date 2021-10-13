@@ -42,6 +42,28 @@ const cars = [
             price: "$39,990"
         },
         learnMoreLink: "#"
+    },
+    {
+        name: "Tesla Model 3",
+        image: "../images/cars/model-3.png",
+        specs: {
+            range: "263 miles",
+            battery: "82 kWh",
+            power: "197 HP",
+            price: "$41,990"
+        },
+        learnMoreLink: "#"
+    },
+    {
+        name: "Ford Mustang Mach E",
+        image: "../images/cars/mach-e.png",
+        specs: {
+            range: "270 miles",
+            battery: "70 kWh",
+            power: "266 HP",
+            price: "$42,895"
+        },
+        learnMoreLink: "#"
     }
 ]
 
