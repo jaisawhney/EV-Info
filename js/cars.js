@@ -31,6 +31,17 @@ const cars = [
             price: "$29,900"
         },
         learnMoreLink: "#"
+    },
+    {
+        name: "Kia Niro EV",
+        image: "../images/cars/kia-niro.png",
+        specs: {
+            range: "239 miles",
+            battery: "64 kWh",
+            power: "201 HP",
+            price: "$39,990"
+        },
+        learnMoreLink: "#"
     }
 ]
 

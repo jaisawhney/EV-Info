@@ -42,7 +42,7 @@ data.forEach(car => {
     const learnMore = document.createElement("a");
     learnMore.className = "learn-more";
     learnMore.innerHTML = "Learn More";
-    learnMore.href = data.learnMoreLink;
+    learnMore.href = car.learnMoreLink;
 
     card.append(carSpecs, learnMore)
     cards.append(card);
