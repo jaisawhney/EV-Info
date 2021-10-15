@@ -1,7 +1,7 @@
 const cars = [
     {
         name: "Nissan Leaf",
-        image: "../images/cars/nissan-leaf.png",
+        image: "./images/cars/nissan-leaf.png",
         specs: {
             range: "149 miles",
             battery: "40 kWh",
@@ -11,8 +11,8 @@ const cars = [
         learnMoreLink: "#"
     },
     {
-        name: "2021 Chevy Bolt",
-        image: "../images/cars/chevy-bolt.png",
+        name: "Chevy Bolt",
+        image: "./images/cars/chevy-bolt.png",
         specs: {
             range: "259 miles",
             battery: "66 kWh",
@@ -23,7 +23,7 @@ const cars = [
     },
     {
         name: "Mini Cooper SE",
-        image: "../images/cars/mini-se.png",
+        image: "./images/cars/mini-se.png",
         specs: {
             range: "110 miles",
             battery: "32.64 kWh",
@@ -34,7 +34,7 @@ const cars = [
     },
     {
         name: "Kia Niro EV",
-        image: "../images/cars/kia-niro.png",
+        image: "./images/cars/kia-niro.png",
         specs: {
             range: "239 miles",
             battery: "64 kWh",
@@ -45,7 +45,7 @@ const cars = [
     },
     {
         name: "Tesla Model 3",
-        image: "../images/cars/model-3.png",
+        image: "./images/cars/model-3.png",
         specs: {
             range: "263 miles",
             battery: "82 kWh",
@@ -56,7 +56,7 @@ const cars = [
     },
     {
         name: "Ford Mustang Mach E",
-        image: "../images/cars/mach-e.png",
+        image: "./images/cars/mach-e.png",
         specs: {
             range: "270 miles",
             battery: "70 kWh",

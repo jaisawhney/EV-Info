@@ -7,7 +7,7 @@ html, body {
 
 main {
     min-height: 100%;
-    font-family: Roboto, "serif";
+    font-family: Montserrat, "serif";
 }
 
 nav {
@@ -65,7 +65,7 @@ section#home {
     font-size: 2em;
 }
 
-section#why, section#cars {
+section#why, section#cars, section#releases {
     display: flex;
     flex-direction: column;
 }
@@ -79,35 +79,41 @@ section#cars {
     padding: 0 50px 25px 50px;
 }
 
-.cards {
+.car-cards {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, 350px);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 1.5em;
 }
 
-.card {
+.car-card {
     background-color: white;
     padding: 10px;
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 5px 1px #E8E8E8FF;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
-.card-img img {
-    width: 100%;
+.card-img-container {
+    text-align: center;
+}
+
+.card-img-container img {
+    width: auto;
+    height: 200px;
     object-fit: cover;
+    pointer-events: none;
 }
 
-.card-img h3 {
+.card-img-container h3 {
     color: dimgray;
     font-weight: bold;
 }
 
-
 .card-specs {
     display: grid;
+    justify-content: space-around;
     grid-gap: 1em;
     grid-template-areas: "r b"
                          "p pr";
@@ -144,10 +150,53 @@ section#cars {
     background-color: coral;
     border-radius: 10px;
     text-align: center;
+    transition: background-color 100ms, color 100ms;
+}
+
+.learn-more:hover {
+    background-color: transparent;
+    color: coral;
+    border: 1px solid coral;
+    margin: 4px;
 }
 
 .gray-text {
     color: gray;
+}
+
+section#upcoming-releases header {
+    text-align: center;
+}
+
+.releases-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.releases-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.releases-card {
+    padding: 10px;
+    width: 400px;
+}
+
+.releases-card figure {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.releases-card img {
+    object-fit: cover;
+    width: 400px;
+    height: 250px;
+    pointer-events: none;
 }
 
 footer {
@@ -155,4 +204,3 @@ footer {
     width: 100%;
     text-align: center;
 }
-

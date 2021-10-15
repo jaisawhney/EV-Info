@@ -1,12 +1,12 @@
-const cards = document.querySelector("#cards");
+const cards = document.querySelector("#car-cards");
 import data from "./cars.js"
 
 data.forEach(car => {
     const card = document.createElement("div");
-    card.className = "card";
+    card.className = "car-card";
 
     const cardImg = document.createElement("div");
-    cardImg.className = "card-img";
+    cardImg.className = "card-img-container";
 
     const img = document.createElement("img");
     img.src = car.image;
@@ -55,7 +55,7 @@ function scroll() {
     const homeSection = document.querySelector("#home");
     const navBar = document.querySelector("#navbar");
 
-    if (window.scrollY > (homeSection.offsetHeight - navBar.scrollHeight-1)) {
+    if (window.scrollY > (homeSection.offsetHeight - navBar.scrollHeight)) {
         navBar.classList.add("scrolled")
     } else {
         navBar.classList.remove("scrolled")
